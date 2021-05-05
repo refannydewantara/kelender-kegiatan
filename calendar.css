@@ -1,0 +1,174 @@
+.main {
+  background-color: #4378DB;
+}
+
+.main .container {
+  border-radius: 12px;
+  background-color: #c9dcf6;
+  margin-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 24px;
+}
+
+.main .container .month {
+  color: #FEFEFE;
+  font-size: 2em;
+}
+
+.main .container .days {
+  color: #21205A;
+  text-align: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fefefe;
+  border-radius: 12px 12px 0 0;
+}
+
+.main .container .days .day {
+  padding: 0px 12px;
+  border-bottom: 1px solid #c9dcf6;
+  margin-top: -24px;
+}
+
+.main .container .days .day.weekend {
+  color: rgba(223, 74, 74, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main .container .dates {
+  background-color: #FEFEFE;
+  border-radius: 0 0 12px 12px;
+}
+
+.main .container .dates .indeks {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main .container .dates .indeks div {
+  display: inline-block;
+  height: 24px;
+  margin-right: 24px;
+}
+
+.main .container .dates .indeks span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main .container .dates .indeks .eks {
+  background-color: #F0A714;
+}
+
+.main .container .dates .indeks .int {
+  background-color: #4378DB;
+}
+
+.main .container .date {
+  color: #21205A;
+  padding: 0px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid transparent;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.main .container .date .tanggal {
+  display: inline-block;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.main .container .date .kegiatans {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .container .date .kegiatans .kegiatan {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.main .container .date .kegiatans .eks {
+  background-color: #F0A714;
+}
+
+.main .container .date .kegiatans .int {
+  background-color: #4378DB;
+}
+
+.main .container .date.curDate {
+  border: 2px solid #017cff6b;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .container .date.today {
+  color: #F5F6FA;
+  background-color: #c9dcf6;
+}
+
+.main .container #tgl0 {
+  visibility: hidden;
+}
+
+.main .container .weekend {
+  color: #9e9e9e;
+  font-weight: 400;
+}
+
+.main .container .weekend .kegiatans {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .container .weekend .kegiatans .kegiatan {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.main .container .weekend .kegiatans .eks {
+  background-color: #F0A714;
+}
+
+.main .container .weekend .kegiatans .int {
+  background-color: #4378DB;
+}
+/*# sourceMappingURL=calendar.css.map */

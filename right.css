@@ -1,0 +1,125 @@
+.rekam {
+  margin-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #c9dcf6;
+}
+
+.rekam form .judul {
+  font-size: 2em;
+  padding-left: 20px;
+  color: #FEFEFE;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.rekam form .close {
+  font-size: 2em;
+  margin-right: 24px;
+  color: #FEFEFE;
+  display: inline-block;
+  float: right;
+  margin-top: 24px;
+}
+
+.rekam form ul {
+  list-style-type: none;
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.rekam form ul .noagenda {
+  display: none;
+  height: 0px;
+  border: 1px solid black;
+}
+
+.rekam form ul li {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.rekam form ul li label {
+  margin-left: 8px;
+  top: 38px;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+}
+
+.rekam form ul li .labelup {
+  top: 24px;
+  font-size: 0.7em;
+}
+
+.rekam form ul li input {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 60px;
+  margin-top: 4px;
+  font-size: 1em;
+  line-height: 20px;
+  padding: 0 8px;
+  padding-top: 12px;
+  background-color: #FEFEFE;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  color: #21205A;
+}
+
+.rekam form ul li .detail {
+  border-bottom: 1px solid white;
+  margin-top: 28px;
+  height: 36px;
+  padding: 0px 6px 24px 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rekam form .button {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rekam form .button .simpan,
+.rekam form .button .ubah,
+.rekam form .button .batal.rekam,
+.rekam form .button .hapus {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #017BFF;
+  color: #F5F6FA;
+  cursor: pointer;
+}
+
+.rekam form .button .batal.rekam,
+.rekam form .button .batal.ubah,
+.rekam form .button .hapus {
+  background-color: transparent;
+  color: inherit;
+}
+
+.rekam form .button .hapus a {
+  text-decoration: none;
+  color: #21205A;
+}
+/*# sourceMappingURL=right.css.map */

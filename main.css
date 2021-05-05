@@ -1,0 +1,101 @@
+.eventlist {
+  background-color: #c9dcf6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+.eventlist .title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #c9dcf6;
+  height: 60px;
+  font-size: 2em;
+  padding-left: 20px;
+  color: #FEFEFE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 50px;
+}
+
+.eventlist .agendas {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(40px, 40px);
+  padding: 0 24px 24px 24px;
+  color: #FEFEFE;
+}
+
+.eventlist .agendas .agenda.no0 {
+  font-size: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200%;
+}
+
+.eventlist .agendas .agenda.no0 span {
+  cursor: pointer;
+  color: #017BFF;
+  text-decoration: underline;
+}
+
+.eventlist .agendas .agenda.curAgenda {
+  background-color: #FEFEFE;
+  border-radius: 4px;
+  color: #21205A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.eventlist .agendas .agenda {
+  padding-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.eventlist .agendas .agenda .pineks {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #F0A714;
+}
+
+.eventlist .agendas .agenda .pinint {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #4378DB;
+}
+
+.eventlist .agendas .agenda .name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 12px;
+}
+/*# sourceMappingURL=main.css.map */

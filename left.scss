@@ -1,0 +1,72 @@
+.left {
+
+    z-index: 1;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+
+    .logo {
+        // border: 2px solid pink;
+        grid-row: 1/2;
+        font-size: 60px;
+        color: #fefefe;
+    }
+
+    .navbar {
+        // border: 2px solid green;
+        grid-row: 2/10;
+
+
+        .nav {
+
+            // display: grid;
+            display: inline-block;
+            width: 80%;
+            grid-template-columns: repeat(4, 1fr);
+            line-height: 44px;
+            color: #e0e0e0;
+            height: 48px;
+            padding-left: 20px;
+            // border: 1px solid black;
+            box-sizing: content-box;
+            border-right: 2px solid transparent;
+
+
+            .title {
+
+                grid-column: 1/4;
+                display: inline-block;
+                width: 80%;
+            }
+
+            .jumlah {
+
+                grid-column: 4/5;
+                margin: 0 auto;
+                display: inline-block;
+
+                vertical-align: middle;
+
+
+
+                .angka {
+                    display: flex;
+                    border: 1px solid white;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+
+
+                }
+            }
+        }
+
+        .nav.current {
+
+            border-right: 2px solid white;
+            box-sizing: content-box;
+            transition: .3s;
+        }
+    }
+}

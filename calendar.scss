@@ -1,0 +1,201 @@
+.main {
+
+
+    // font-weight: 600;
+    background-color: #4378DB;
+
+    // .title {
+    //     button {
+    //         border: none;
+    //     }
+    // }
+
+    .container {
+        border-radius: 12px;
+        background-color: #c9dcf6;
+        margin-top: 0px;
+        box-sizing: border-box;
+        padding: 24px;
+
+        .month {
+
+            color: #FEFEFE;
+            font-size: 2em;
+
+
+
+        }
+
+        .days {
+            color: #21205A;
+            text-align: start;
+            align-items: center;
+            background-color: #fefefe;
+            border-radius: 12px 12px 0 0;
+
+            .day {
+                padding: 0px 12px;
+                border-bottom: 1px solid #c9dcf6;
+                margin-top: -24px;
+            }
+
+            .day.weekend {
+                color: rgba(223, 74, 74, 0.6);
+                color: rgba(0, 0, 0, 0.6);
+
+            }
+        }
+
+        .dates {
+            background-color: #FEFEFE;
+            border-radius: 0 0 12px 12px;
+
+
+
+
+
+            .indeks {
+                grid-column: 5/8;
+                grid-row: 6/7;
+                display: flex;
+                justify-self: right;
+                align-items: flex-end;
+                // border: 1px solid black;
+
+
+
+                div {
+                    display: inline-block;
+
+                    height: 24px;
+                    margin-right: 24px;
+
+                }
+
+                span {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+
+                .eks {
+                    background-color: #F0A714;
+                }
+
+                .int {
+                    background-color: #4378DB;
+                }
+            }
+
+
+
+        }
+
+        .date {
+            color: #21205A;
+            padding: 0px 12px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            font-weight: 500;
+            border-radius: 2px;
+
+            .tanggal {
+                display: inline-block;
+                grid-row: 1/2;
+            }
+
+
+            .kegiatans {
+
+                grid-row: 2/4;
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .kegiatan {
+
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    margin-right: 2px;
+
+                }
+
+                .eks {
+                    background-color: #F0A714;
+                }
+
+                .int {
+                    background-color: #4378DB;
+                }
+
+            }
+
+        }
+
+        .date.curDate {
+            border: 2px solid #017cff6b;
+            transition: .3s;
+        }
+
+        .date.today {
+            color: #F5F6FA;
+            background-color: #c9dcf6;
+        }
+
+        #tgl0{
+            visibility: hidden;
+        }
+
+        .weekend {
+            color: #9e9e9e;
+            font-weight: 400;
+
+            .kegiatans {
+
+                grid-row: 2/4;
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .kegiatan {
+
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    margin-right: 2px;
+
+                }
+
+                .eks {
+                    background-color: #F0A714;
+                }
+
+                .int {
+                    background-color: #4378DB;
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+}

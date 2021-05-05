@@ -1,0 +1,77 @@
+.left {
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+}
+
+.left .logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  font-size: 60px;
+  color: #fefefe;
+}
+
+.left .navbar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2/10;
+}
+
+.left .navbar .nav {
+  display: inline-block;
+  width: 80%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  line-height: 44px;
+  color: #e0e0e0;
+  height: 48px;
+  padding-left: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-right: 2px solid transparent;
+}
+
+.left .navbar .nav .title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: inline-block;
+  width: 80%;
+}
+
+.left .navbar .nav .jumlah {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.left .navbar .nav .jumlah .angka {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left .navbar .nav.current {
+  border-right: 2px solid white;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=left.css.map */
